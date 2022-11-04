@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Houseasaurus</title>
 
-    <!-- Bootstrap Core CSS ––––––––––––––––––––––––––– -->
+    <!-- CSS ––––––––––––––––––––––––––– -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
       crossorigin="anonymous"
     />
-    <!-- Custom CSS ––––––––––––––––––––––––––– -->
     <link href="style.css" rel="stylesheet" />
-    <!-- fontawesome icons––––––––––––––––––––––––––– -->
+    <!-- Icons––––––––––––––––––––––––––– -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -28,17 +27,16 @@
       href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap"
       rel="stylesheet"
     />
-    <!-- JavaScript -------------------------->
+    <!-- JS -------------------------->
     <script src="script.js"></script>
   </head>
 
   <body>
-    <!-- Home  -->
     <div class="background page-main" id="home">
       <!-- Navigation Menu -->
       <div class="topnav" id="myTopnav">
         <div class="navcontent" id="topinner">
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <a href="javascript:void(0);" class="icon" onclick="shrinkTopnav()">
             <i class="fa fa-bars"></i>
           </a>
           <a href="#contact">apply</a>
@@ -47,14 +45,13 @@
         </div>
       </div>
 
+      <!-- Home -->
       <div class="main_title">
         <h2>welcome to</h2>
         <h1>h o u s e a s a u r u s</h1>
-        <a href="#contact"
-          ><button type="button" class="btn btn-lg">
-            APPLICATIONS OPEN!
-          </button></a
-        >
+        <a href="#contact">
+          <button type="button" class="btn btn-lg">APPLICATIONS OPEN!</button>
+        </a>
       </div>
 
       <!-- About  -->
@@ -83,6 +80,7 @@
               These four pillars are the common ground on which we base our
               decisions, which we make by consensus.
             </p>
+            <!-- social media icons -->
             <div class="row justify-content-center icons">
               <a
                 class="social"
@@ -105,7 +103,7 @@
             </div>
           </div>
 
-          <!-- Instagram embed -- it's really long -->
+          <!-- Instagram post embed -->
           <div class="col-sm-6 pic_post">
             <blockquote
               class="instagram-media"
@@ -393,11 +391,12 @@
         </div>
       </div>
 
+      <!-- Divider image -->
       <div class="middle_img">
-        <!-- About -- torn bottom  -->
-        <div class="about_torn"></div>
+        <div class="torn"></div>
       </div>
 
+      <!-- Application -->
       <div class="contactsect" id="contact">
         <h2>a p p l y !</h2>
         <div class="googleform">
@@ -416,10 +415,11 @@
         </div>
       </div>
 
+      <!-- Footer -->
       <div class="bottom"></div>
     </div>
 
-    <!-- Bootstrap core JavaScript ============================================ -->
+    <!-- extra JS ============================================ -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
