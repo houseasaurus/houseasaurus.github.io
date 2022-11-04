@@ -7,8 +7,3 @@ function shrinkTopnav() {
     x.className = "topnav";
   }
 }
-
-//For loading animation 
-window.addEventListener("load", () => {
-  document.querySelector("body").classList.add("loaded"); 
-});

@@ -96,7 +96,7 @@ html, body {
 /* HOME */
 /* Background image */
 .background {
-  background-image: url('home_bkgrd_back.jpg');
+  background-image: url('images/home_bkgrd_back.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: left bottom;
@@ -108,44 +108,83 @@ html, body {
 .main_title {
   text-align: center;
   padding: 15vh 0 0 0;
-  background-image: url('home_bkgrd_front.png');
+  background-image: url('images/home_bkgrd_front.png');
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: cover;
   height: 100%;
 }
 
-/* Welcome title */
-.background h2 {
-  color: #ff8300;
-  display: block;
-  text-align: center;
-  margin: auto;
+/* Welcome title -- large screen */
+@media screen and (min-width: 992px) {
+  .main_title h2 {
+    font-family: 'Nanum Pen Script', cursive;
+    color: #843dc7;
+    font-size: 4vw;
+    float: right;
+    margin-right: 2em;
+    margin-top: 0.5em;
+    margin-bottom: -0.2em;
+  }
+
+  .main_title h1 {
+    font-family: 'Amatic SC', cursive;
+    color: #111f4e;
+    font-weight: 700;
+    font-size: 6.5vw;
+    float: right;
+    margin-top: 0;
+    margin-left: 6em;
+    margin-right: 0.5em;
+  }
+
+  .main_title button {
+    font-family: 'Nanum Pen Script', cursive;
+    color: white;
+    margin: 10px 60px 30px;
+    font-size: 30px;
+    background-color: #e01f91;
+    border-color: #e01f91;
+    float: right;
+  }
 }
 
-.background h1 {
-  color: #111f4e;
-  display: block;
-  text-align: center;
-  margin: auto;
-}
+/* Welcome title -- smaller screen */
+@media screen and (max-width: 992px) {
+  .background h2 {
+    font-family: 'Nanum Pen Script', cursive;
+    color: #843dc7;
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
 
-.main_title h2 {
-  font-size: 5vw;
-}
+  .background h1 {
+    font-family: 'Amatic SC', cursive;
+    color: #111f4e;
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
 
-.main_title h1 {
-  font-weight: 700;
-  font-size: 8vw;
-}
+  .main_title h2 {
+    font-size: 5vw;
+  }
 
-/* Application Button */
-.main_title button {
-  color: white;
-  margin: 30px;
-  font-size: 30px;
-  background-color: #e01f91;
-  border-color: #e01f91;
+  .main_title h1 {
+    font-weight: 700;
+    font-size: 8vw;
+  }
+
+  /* Application Button */
+  .main_title button {
+    font-family: 'Nanum Pen Script', cursive;
+    color: white;
+    margin: 30px;
+    font-size: 30px;
+    background-color: #e01f91;
+    border-color: #e01f91;
+  }  
 }
 
 .main_title .btn:hover {
@@ -180,6 +219,10 @@ html, body {
 
 /* Title ('about') */
 .aboutsect h2 {
+  font-family: 'Nanum Pen Script', cursive;
+  display: block;
+  text-align: center;
+  margin: auto;
   font-size: 3em;
   color:white;
 }
@@ -197,6 +240,7 @@ html, body {
 .icons {
   margin:0;
   margin-top:2em;
+  margin-bottom: -1.5em;
   width: 100%;
 }
 
@@ -219,7 +263,6 @@ html, body {
 .pic_post {
   overflow-y: hidden;
   overflow-x: hidden;
-  height: 70vh;
   max-width: 100%;
   min-height: 60%;
 }
@@ -229,7 +272,7 @@ html, body {
 /* DIVIDER */
 /* Torn top&bottom image */
 .torn {
-  background-image: url('top_torn.png');
+  background-image: url('images/torn.png');
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
@@ -239,7 +282,7 @@ html, body {
 
 /* Image behind torn */
 .middle_img {
-  background-image: url('garden.jpg');
+  background-image: url('images/garden.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -265,6 +308,10 @@ html, body {
 
 /* Title ('apply!') */
 .contactsect h2 {
+  font-family: 'Nanum Pen Script', cursive;
+  display: block;
+  text-align: center;
+  margin: auto;
   font-size: 3em;
   margin-bottom: 20px;
   color:white;
