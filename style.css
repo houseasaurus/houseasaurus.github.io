@@ -319,6 +319,7 @@ html, body {
 
 /* Inner text */
 .contactsect p {
+  text-align: center;
   font-size: 1.2em;
 }
 
