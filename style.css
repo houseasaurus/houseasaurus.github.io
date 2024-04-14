@@ -187,13 +187,15 @@ html, body {
   }  
 }
 
-.main_title .btn:hover {
+.main_title .btn:hover,
+.contactsect .btn:hover {
   color: white;
   background-color: #d61dd3;
   border-color: #d61dd3;
 }
 
-.main_title .btn:active {
+.main_title .btn:active
+.contactsect .btn:active {
   color: white;
   background-color: #d61dd3;
   border-color: #d61dd3;
@@ -296,9 +298,24 @@ html, body {
 /* APPLY (contact) */
 /* Container class */
 .contactsect {
-  height: 100vh; 
+  height: 125vh; 
   background-color:#5e7159;
   padding: 10vh 5vw;
+}
+
+.contactsect button {
+  font-family: 'Nanum Pen Script', cursive;
+  color: white;
+  margin: 15px auto;
+  display: block;
+  font-size: 30px;
+  background-color: #e01f91;
+  border-color: #e01f91;
+} 
+
+.contactsect a:hover,
+.contactsect a:focus {
+  text-decoration: none;
 }
 
 /* All inner content */ 
